@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d  evice-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='button.css') }}" />
+    <script type="text/javascript" src="{{ url_for('static', filename='button.js') }}"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <title>Homepage</title>
+</head>
+<body>
+
+
+
+<div class="ct" id="t1">
+    <div class="ct" id="t2">
+      <div class="ct" id="t3">
+        <div class="ct" id="t4">
+   <section>  
+    <ul class="navbarlist">
+      <a href="#t1"><li class="icon fa fa-home" id="uno"></li></a> <br>
+      <a href="#t2"><li class="icon fa fa-keyboard-o" id="dos"></li></a> <br>
+      <a href="#t3"><li class="icon fa fa-coffee" id="tres"></li></a> <br>
+      <a href="#t4"><li class="icon fa fa-dribbble" id="cuatro"></li></a> <br>
+    </ul>
+     <div class="page" id="p1">
+        <span class="title">Home</span>
+        
+            <span class="hint">
+                
+                <div class="content">
+
+                    <form action="/webcam/" method="post">
+                    <button class="button">
+                        <div class="button-deco">
+                            <div class="button-filter"></div>
+                        </div>
+                        <span class="button-text">
+                            <span class="button-text-inner"> Start </span>
+                        </span>
+                    </button>
+                  </form>
+                </div>
+
+            </span> 
+
+     </div>
+
+     <div class="page" id="p2">
+       <li class="icon fa fa-keyboard-o"><span class="title">Type</span></li>
+     </div>  
+     <div class="page" id="p3">
+       <li class="icon fa fa-coffee"><span class="title">Coffee</span></li>
+     </div>
+     <div class="page" id="p4">
+      <li class="icon fa fa-dribbble"><span class="title">Dribbble</span><span class="hint"><a href="https://dribbble.com/rupok" target="_blank">Follow me on Dribbble</span></li>
+     </div>  
+       <p class="credit"> Original Pen by <a href="https://codepen.io/hrtzt/">Alberto Hartzet</a></p>
+   </section>
+          
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- cursor ka kaam      -->
+<svg class="cursor" width="25" height="25" viewBox="0 0 25 25">
+    <circle class="cursor-inner" cx="12.5" cy="12.5" r="6.25"></circle>
+</svg>
+
+<script type="text/javascript" src="{{ url_for('static', filename='/assist/magnet.min.js') }}"></script>
+</body>
+</html>
